@@ -24,11 +24,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`antialiased ${hindSiliguri.className} max-w-4/5 mx-auto`}
-      >
+      <body className={`antialiased ${hindSiliguri.className}`}>
+        <main className="max-w-4/5 mx-auto min-h-[calc(100vh-272px)]">
         <Navbar />
         {children}
+        </main>
         <Footer />
       </body>
     </html>
