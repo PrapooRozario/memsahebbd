@@ -1,6 +1,7 @@
 "use client";
 
 import React, { JSX, useRef, useState, useEffect } from "react";
+import type { Swiper as SwiperType } from "swiper";
 import BannerCard from "./bannerCard";
 import "swiper/css";
 import { bannerData } from "@/app/data/BannerData";
@@ -17,13 +18,18 @@ export default function Banner(): JSX.Element {
   const nextEl = useRef<HTMLButtonElement | null>(null);
   const prevEl = useRef<HTMLButtonElement | null>(null);
   const [currentIndex, setCurrentIndex] = useState<number>(0);
-  const [swiperRef, setSwiperRef] = useState< Swiper | null>(null);
+  const [swiperRef, setSwiperRef] = useState<SwiperType | null>(null);
 
   // Fix navigation binding
   useEffect(() => {
     if (swiperRef && nextEl.current && prevEl.current) {
-      swiperRef.params.navigation.prevEl = prevEl.current;
-      swiperRef.params.navigation.nextEl = nextEl.current;
+      if (
+        swiperRef.params.navigation &&
+        typeof swiperRef.params.navigation !== "boolean"
+      ) {
+        swiperRef.params.navigation.prevEl = prevEl.current;
+        swiperRef.params.navigation.nextEl = nextEl.current;
+      }
       swiperRef.navigation.init();
       swiperRef.navigation.update();
     }
