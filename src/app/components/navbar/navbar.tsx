@@ -3,10 +3,10 @@ import { navdata1 } from "@/app/data/NavData1";
 import { navdata2 } from "@/app/data/NavData2";
 import { navdata3 } from "@/app/data/NavData3";
 import { ChevronDown, Menu, X } from "lucide-react";
-import { motion } from "motion/react";
+import { motion, useScroll } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
-import React, { JSX, useRef, useState } from "react";
+import React, { JSX, useEffect, useRef, useState } from "react";
 import { useClickAway } from "react-use";
 export default function Navbar(): JSX.Element {
   const [openSections, setOpenSections] = useState<boolean>(false);
@@ -30,8 +30,21 @@ export default function Navbar(): JSX.Element {
     }
     setOpenNav(false);
   });
+  const { scrollY } = useScroll(); // Detect scroll position
+  const [scrollDown, setScrollingDown] = useState<boolean>(false);
+
+  useEffect(() => {
+    return scrollY.onChange((y) => setScrollingDown(y > 20));
+  }, [scrollY]);
+
   return (
-    <div className="mt-4 flex items-center justify-between bg-[linear-gradient(90deg,rgba(217,207,254,0.30)_0%,rgba(217,207,254,0.30)_100%)] px-8 rounded-2xl">
+    <div
+      className={`mt-4 flex items-center sticky top-4 z-50 ${
+        scrollDown
+          ? "bg-white"
+          : "bg-[linear-gradient(90deg,rgba(217,207,254,0.30)_0%,rgba(217,207,254,0.30)_100%)] "
+      } justify-between px-8 rounded-2xl`}
+    >
       <div>
         <Image
           alt="Memshaheb Bangladesh"
@@ -86,7 +99,7 @@ export default function Navbar(): JSX.Element {
                 duration: 0.2,
                 ease: "easeOut",
               }}
-              className="absolute right-0 w-[180px] top-full mt-2 py-6 px-8 rounded-lg border border-[#FF5CBC]/15 bg-white/95 backdrop-blur-sm z-50"
+              className="absolute z-50 right-0 w-[180px] top-full mt-2 py-6 px-8 rounded-lg border border-[#FF5CBC]/15 bg-white/95 backdrop-blur-sm"
             >
               <ul className="flex flex-col gap-5">
                 {navdata2.map((nav) => (
@@ -127,7 +140,7 @@ export default function Navbar(): JSX.Element {
           initial={{ x: "-100%" }}
           animate={{ x: openNav ? 0 : "-100%" }}
           transition={{ type: "spring", stiffness: 300, damping: 30 }}
-          className="fixed top-0 left-0 w-60 h-full p-6 border-r border-[#FF5CBC]/15 bg-white/95 backdrop-blur-sm z-40"
+          className="fixed top-0 left-0 w-60 h-full p-6 border-r border-[#FF5CBC]/15 bg-white/95 backdrop-blur-sm z-50"
         >
           <ul className="flex flex-col gap-6">
             {navdata3.map((nav) => (

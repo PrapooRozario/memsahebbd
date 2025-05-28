@@ -1,0 +1,13 @@
+/* styles/globals.css বা app/globals.css */
+.swiper-pagination-bullet {
+    background-color: #ddddddce;
+    opacity: 1;
+    width: 12px;
+    height: 12px;
+    border-radius: 9999px;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: #FF5CBC;
+  }
+  
