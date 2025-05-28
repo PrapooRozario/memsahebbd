@@ -17,7 +17,7 @@ export default function Banner(): JSX.Element {
   const nextEl = useRef<HTMLButtonElement | null>(null);
   const prevEl = useRef<HTMLButtonElement | null>(null);
   const [currentIndex, setCurrentIndex] = useState<number>(0);
-  const [swiperRef, setSwiperRef] = useState<HTMLButtonElement | null>(null);
+  const [swiperRef, setSwiperRef] = useState< Swiper | null>(null);
 
   // Fix navigation binding
   useEffect(() => {
