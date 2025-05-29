@@ -6,6 +6,7 @@ import LatestNews from "./home/latest-news/LatestNews";
 import Literature from "./home/literature/Literature";
 import ContactSection from "./home/contact/ContactSection";
 import WomenDevelopment from "./home/women-development/WomenDevelopment";
+import Fashion from "./home/Fashion/Fashion";
 export default function page() {
   return (
     <div>
@@ -29,6 +30,9 @@ export default function page() {
       </section>
       <section className="mb-[107px]">
         <WomenDevelopment />
+      </section>
+      <section className="mb-[107px]">
+        <Fashion />
       </section>
     </div>
   );
