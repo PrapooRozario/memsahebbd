@@ -10,14 +10,16 @@ export default function Footer(): JSX.Element {
       <div className=" mx-auto max-w-4/5 p-4">
         <div className="flex flex-col">
           <div>
-            <Image
-              alt="Memshaheb Bangladesh"
-              src="/logo/Memsaheb2nd.png"
-              width={100}
-              height={100}
-              className="w-auto h-auto max-w-[80px] md:max-w-[100px] object-contain"
-              priority
-            />
+            <Link href="/">
+              <Image
+                alt="Memshaheb Bangladesh"
+                src="/logo/Memsaheb2nd.png"
+                width={100}
+                height={100}
+                className="w-auto h-auto max-w-[80px] md:max-w-[100px] object-contain"
+                priority
+              />
+            </Link>
           </div>
 
           <div className="my-6 md:flex justify-between space-y-6">

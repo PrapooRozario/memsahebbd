@@ -3,7 +3,8 @@ import Banner from "./home/banner/banner";
 import NewPublications from "./home/new-publications/NewPublications";
 import EidSpecial from "./home/eid-special/EidSpecial";
 import LatestNews from "./home/latest-news/LatestNews";
-import { ContactSection } from "./home/contact/ContactSection";
+import Literature from "./home/literature/Literature";
+import ContactSection from "./home/contact/ContactSection";
 export default function page() {
   return (
     <div>
@@ -20,7 +21,10 @@ export default function page() {
         <LatestNews />
       </section>
       <section className="mb-[107px]">
-          <ContactSection />
+        <ContactSection />
+      </section>
+      <section className="mb-[107px]">
+        <Literature />
       </section>
     </div>
   );

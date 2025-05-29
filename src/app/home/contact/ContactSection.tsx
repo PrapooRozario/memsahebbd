@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-export const ContactSection = () => {
+export default function ContactSection() {
   return (
     <div className="rounded-3xl w-full min-h-[500px] p-6 relative bg-[url('/banner/contact-bg.png')] bg-no-repeat bg-cover">
       <div className="text-white flex flex-col justify-center items-center absolute inset-0 text-center px-4">
@@ -9,7 +9,7 @@ export const ContactSection = () => {
           প্রদায়ক/কন্ট্রিবিউটর চাই
         </h2>
 
-        <p className="text-lg md:text-xl mb-8 leading-relaxed max-w-2xl">
+        <p className="text-lg md:text-xl mb-8 leading-relaxed max-w-3/4">
           আপনি কী শিক্ষার্থী কিংবা গৃহিনী/চাকুরিজীবী, লিখতে চান নিয়মিত আপনার
           মনের কথা, সাহিত্য কিংবা সংবাদ নিয়ে কাজ করতে চান? তাহলে আজই আপনার
           পূর্ণাঙ্গ বায়োডাটা পাঠিয়ে দিন। এছাড়া আপনার ৩টি লেখা নমুনা হিসেবে
@@ -26,4 +26,4 @@ export const ContactSection = () => {
       </div>
     </div>
   );
-};
+}
