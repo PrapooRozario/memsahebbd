@@ -9,7 +9,7 @@ interface PostCard {
   link: string;
 }
 
-const PostCard1: React.FC<PostCard> = ({ img, title, des, link }) => {
+const PostCard: React.FC<PostCard> = ({ img, title, des, link }) => {
   return (
     <div className="bg-[#D9CFFE4D] rounded-[10px] flex flex-col min-h-[520px]">
       <div className="relative h-[300px] w-full">
@@ -34,4 +34,4 @@ const PostCard1: React.FC<PostCard> = ({ img, title, des, link }) => {
   );
 };
 
-export default PostCard1;
+export default PostCard;

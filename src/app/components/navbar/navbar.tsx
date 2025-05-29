@@ -72,7 +72,7 @@ export default function Navbar() {
               <button
                 ref={sectionButtonRef}
                 onClick={() => setOpenSections(!openSections)}
-                className="flex items-center gap-1 text-lg font-medium text-gray-900 hover:text-[#FF5CBC] transition-colors"
+                className="flex items-center cursor-pointer gap-1 text-lg font-medium text-gray-900 hover:text-[#FF5CBC] transition-colors"
                 aria-expanded={openSections}
               >
                 সেকশনসমূহ
