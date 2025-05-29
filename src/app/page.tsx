@@ -5,6 +5,7 @@ import EidSpecial from "./home/eid-special/EidSpecial";
 import LatestNews from "./home/latest-news/LatestNews";
 import Literature from "./home/literature/Literature";
 import ContactSection from "./home/contact/ContactSection";
+import WomenDevelopment from "./home/women-development/WomenDevelopment";
 export default function page() {
   return (
     <div>
@@ -25,6 +26,9 @@ export default function page() {
       </section>
       <section className="mb-[107px]">
         <Literature />
+      </section>
+      <section className="mb-[107px]">
+        <WomenDevelopment />
       </section>
     </div>
   );
