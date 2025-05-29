@@ -2,6 +2,7 @@ import React from "react";
 import Banner from "./home/banner/banner";
 import NewPublications from "./home/new-publications/NewPublications";
 import EidSpecial from "./home/eid-special/EidSpecial";
+import LatestNews from "./home/latest-news/LatestNews";
 export default function page() {
   return (
     <div>
@@ -13,6 +14,9 @@ export default function page() {
       </section>
       <section className="mt-10 mb-[107px]">
         <EidSpecial />
+      </section>
+      <section className="mt-10 mb-[107px]">
+        <LatestNews />
       </section>
     </div>
   );
