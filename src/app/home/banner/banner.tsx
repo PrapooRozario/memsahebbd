@@ -20,7 +20,6 @@ export default function Banner(): JSX.Element {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const [swiperRef, setSwiperRef] = useState<SwiperType | null>(null);
 
-  // Fix navigation binding
   useEffect(() => {
     if (swiperRef && nextEl.current && prevEl.current) {
       if (
@@ -42,13 +41,13 @@ export default function Banner(): JSX.Element {
 
   return (
     <div className="relative">
-      <div className="absolute md:flex flex-col hidden gap-6 right-12 bottom-10 z-50">
+      <div className="absolute md:flex flex-col hidden gap-6 right-12 bottom-10 z-20">
         <div className="relative h-[72px] mb-3">
           {nextBanners.map((d, index) => (
             <Image
               alt={d.title}
               src={d.img}
-              key={d.link}
+              key={index}
               width={105}
               height={72}
               className="rounded-2xl absolute h-[72px] object-cover"
