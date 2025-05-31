@@ -1,20 +1,19 @@
-import React from "react";
-import HeaderText from "../components/ui/HeaderText";
-import { bannerData } from "../data/BannerData";
-import PostCard from "../components/ui/PostCard";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { Inter } from "next/font/google";
-
+import React from "react";
+import HeaderText from "../components/ui/HeaderText";
+import PostCard from "../components/ui/PostCard";
+import { bannerData } from "../data/BannerData";
 const inter = Inter({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
-export default function Andaramahala() {
+export default function CrimeAndLaw() {
   return (
     <div className="mb-[107px] mt-25">
-      <HeaderText text="অন্দরমহল" />
+      <HeaderText text="আইন-সালিশ" />
       <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-10 mt-10">
         {bannerData?.map((d, i) => (
           <PostCard

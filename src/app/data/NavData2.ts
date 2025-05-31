@@ -5,7 +5,7 @@ export const navdata2: { name: string; href: string }[] = [
   },
   {
     name: "অন্দরমহল",
-    href: "/andaramahala",
+    href: "/campus",
   },
   {
     name: "ক্রীড়াঙ্গন",
@@ -13,10 +13,10 @@ export const navdata2: { name: string; href: string }[] = [
   },
   {
     name: "আইন-সালিশ",
-    href: "/আইন-সালিশ",
+    href: "/crime-and-law",
   },
   {
     name: "মতামত",
-    href: "/মতামত",
+    href: "/discussion",
   },
 ];

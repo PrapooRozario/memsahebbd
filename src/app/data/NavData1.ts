@@ -5,10 +5,10 @@ export const navdata1: { name: string; href: string }[] = [
   },
   {
     name: "নারী-উন্নয়ন",
-    href: "/women-development",
+    href: "/women-empowerment",
   },
   {
     name: "ফ্যাশন",
-    href: "/ফ্যাশন",
+    href: "/fashion",
   },
 ];
