@@ -1,7 +1,7 @@
 export const navdata1: { name: string; href: string }[] = [
   {
     name: "সাহিত্য",
-    href: "/সাহিত্য",
+    href: "/literature",
   },
   {
     name: "নারী-উন্নয়ন",
