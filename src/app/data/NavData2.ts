@@ -9,7 +9,7 @@ export const navdata2: { name: string; href: string }[] = [
   },
   {
     name: "ক্রীড়াঙ্গন",
-    href: "/ক্রীড়াঙ্গন",
+    href: "/sports",
   },
   {
     name: "আইন-সালিশ",
