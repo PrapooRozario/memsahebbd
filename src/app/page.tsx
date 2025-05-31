@@ -5,7 +5,7 @@ import EidSpecial from "./home/eid-special/EidSpecial";
 import LatestNews from "./home/latest-news/LatestNews";
 import Literature from "./home/literature/Literature";
 import ContactSection from "./home/contact/ContactSection";
-import WomenDevelopment from "./home/women-development/WomenDevelopment";
+import WomenDevelopment from "./home/women-empowerment/WomenEmpowerment";
 import Fashion from "./home/Fashion/Fashion";
 export default function page() {
   return (

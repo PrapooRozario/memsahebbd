@@ -15,7 +15,7 @@ export default function ContactSection() {
           পূর্ণাঙ্গ বায়োডাটা পাঠিয়ে দিন। এছাড়া আপনার ৩টি লেখা নমুনা হিসেবে
           পাঠাতে হবে।
         </p>
-        <Link href="/">
+        <Link href="/contact">
           <button
             aria-label="যোগাযোগ করুন"
             className="bg-white hover:bg-[#FF5CBC] hover:text-white text-[#FF5CBC] cursor-pointer font-medium py-3 px-8 rounded-lg text-lg transition-colors duration-300"

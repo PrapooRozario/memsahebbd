@@ -3,7 +3,7 @@ import PostCard from "@/app/components/ui/PostCard";
 import { bannerData } from "@/app/data/BannerData";
 import React from "react";
 
-export default function WomenDevelopment() {
+export default function WomenEmpowerment() {
   return (
     <div>
       <HeaderText text="নারী-উন্নয়ন" />
