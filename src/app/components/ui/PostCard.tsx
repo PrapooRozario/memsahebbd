@@ -22,7 +22,7 @@ const PostCard: React.FC<PostCard> = ({ img, title, des, link }) => {
       </div>
       <div className="p-6 flex flex-col flex-grow">
         <h1 className="text-2xl font-semibold">{title}</h1>
-        <p className="text-lg mt-5 line-clamp-4">{des}</p>
+        <p className="text-lg mt-5 line-clamp-3">{des}</p>
         <Link
           href={link}
           className="block text-center  border border-[#FF5CBC] rounded-[10px] py-3 px-8 w-full text-[#FF5CBC] text-lg mt-10 cursor-pointer hover:bg-[#FF5CBC] hover:text-white transition-all duration-200"

@@ -43,7 +43,7 @@ export default function Navbar() {
         scrolled ? "bg-white" : "bg-[rgba(217,207,254,0.3)]"
       }`}
     >
-      <div className="container mx-auto px-4 py-3 flex items-center justify-between">
+      <div className="px-4 py-3 flex items-center justify-between">
         <Link href="/" className="z-50">
           <Image
             src="/logo/Memsaheb.png"
@@ -98,7 +98,7 @@ export default function Navbar() {
                       <Link
                         key={item.href}
                         href={item.href}
-                        className="block px-4 py-2 text-gray-900 hover:bg-[#FF5CBC]/10 hover:text-[#FF5CBC]"
+                        className="block px-4 py-2 text-gray-900 hover:bg-[#FF5CBC]/10 hover:text-[#FF5CBC] text-lg font-medium transition-colors"
                         onClick={() => setOpenSections(false)}
                       >
                         {item.name}

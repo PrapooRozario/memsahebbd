@@ -1,7 +1,7 @@
 export const navdata2: { name: string; href: string }[] = [
   {
     name: "ঈদ সংখ্যা",
-    href: "/ঈদ সংখ্যা",
+    href: "/eid-special",
   },
   {
     name: "অন্দরমহল",

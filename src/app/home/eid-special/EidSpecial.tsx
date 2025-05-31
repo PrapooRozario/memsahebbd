@@ -7,7 +7,7 @@ export default function EidSpecial() {
   return (
     <div>
       <HeaderText text="ঈদ স্পেশাল" />
-      <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5 mt-10">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-10 mt-10">
         {bannerData?.slice(0, 3)?.map((d, i) => (
           <PostCard
             key={i}

@@ -1,14 +1,12 @@
-import HeaderText from "@/app/components/ui/HeaderText";
 import PostCard from "@/app/components/ui/PostCard";
 import { bannerData } from "@/app/data/BannerData";
-import React from "react";
+import React, { JSX } from "react";
 
-export default function Fashion() {
+export default function Posts(): JSX.Element {
   return (
     <div>
-      <HeaderText text="ফ্যাশন" />
       <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-10 mt-10">
-        {bannerData?.slice(0, 3)?.map((d, i) => (
+        {bannerData?.map((d, i) => (
           <PostCard
             key={i}
             title={d.title}
