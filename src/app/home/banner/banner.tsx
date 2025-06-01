@@ -88,7 +88,7 @@ export default function Banner(): JSX.Element {
               img={data.img}
               title={data.title}
               des={data.des}
-              link={data.link}
+              link={data.title}
             />
           </SwiperSlide>
         ))}

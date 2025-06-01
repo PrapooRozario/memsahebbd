@@ -12,7 +12,7 @@ export default function LatestNews() {
           <PostCard
             key={i}
             title={d.title}
-            link={d.link}
+            link={d.title}
             des={d.des}
             img={d.img}
           ></PostCard>

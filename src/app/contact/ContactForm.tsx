@@ -3,7 +3,7 @@ import React from "react";
 
 export default function ContactForm() {
   return (
-    <form className="space-y-6 max-w-4xl mx-auto">
+    <form className="space-y-6">
       <div>
         <label
           htmlFor="name"

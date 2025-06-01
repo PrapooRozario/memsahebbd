@@ -2,42 +2,56 @@ export const bannerData: {
   img: string;
   title: string;
   des: string;
-  link: string;
+  date: string;
+  readTime: string;
+  writer: string;
 }[] = [
   {
-    img: "/banner/b1.jpg",
+    img: "https://i.ibb.co/zHSD733f/b1.jpg",
     title: "বুনো চুম্বন",
     des: "ঝুপ করে সন্ধ্যেটা নামতেই পাহাড়ের গা বেঁয়ে একটা লাল আলো চুইয়ে সামনে বিছানো ফিতের মত নদীতে মিশে যায়। চিকচিকে সেই",
-    link: "#",
+    date: "১ জুন, ২০২৫",
+    readTime: "৩ মিনিটে পড়ুন",
+    writer: "সায়মা ইসলাম",
   },
   {
-    img: "/banner/b2.jpg",
+    img: "https://i.ibb.co/Z6ML4BrK/b2.jpg",
     title: "পাকিজা",
     des: "এ কোন মুখ? এতটা পরিবর্তন? এও কি সম্ভব? কোথায় সেই দীঘল লম্বা চুল! পত্রিকায় ছবিতে নামটা পড়তেই শুভর মাথাটা ঘুরে",
-    link: "#",
+    date: "২ জুন, ২০২৫",
+    readTime: "২ মিনিটে পড়ুন",
+    writer: "রাফি আহমেদ",
   },
   {
-    img: "/banner/b3.jpg",
+    img: "https://i.ibb.co/cSrmDqqd/b3.jpg",
     title: "ঈদের রকমফের",
     des: "ঘুমের মধ্যেই মাঝে মাঝে কেঁপে উঠছেন হামিদা বেগম। চোখ, কপাল কেমন কুঁচকে ফেলছেন আবার স্বাভাবিক হচ্ছেন।",
-    link: "#",
+    date: "৩ জুন, ২০২৫",
+    readTime: "৪ মিনিটে পড়ুন",
+    writer: "নাদিয়া ইসলাম",
   },
   {
-    img: "/banner/b4.jpg",
+    img: "https://i.ibb.co/23ZB6rXb/b4.jpg",
     title: "হে মুমিন, শুনছো?",
     des: "এসেছে আবার পবিত্র মাহে রমজান, ত্যাগ ও মহিমায় হও জাগ্রত মুসলিম জাহান। কত নিয়ামত, কত রহমত আল্লাহ করেছেন দান",
-    link: "#",
+    date: "৪ জুন, ২০২৫",
+    readTime: "৩ মিনিটে পড়ুন",
+    writer: "আবু তালহা",
   },
   {
-    img: "/banner/b5.jpg",
+    img: "https://i.ibb.co/MxRM4RFc/b6.jpg",
     title: "পবিত্র এ মাসে",
     des: "গগণে  আজ নতুন শশীর আগমনইঙ্গিত দিয়ে গেলো জানাতে অভ্যর্থনাযে মাস দিয়েছে সুযোগ, করতে প্রার্থনা,যে মাসে বান্দারা করে",
-    link: "#",
+    date: "৫ জুন, ২০২৫",
+    readTime: "২ মিনিটে পড়ুন",
+    writer: "মাহিরা হোসেন",
   },
   {
-    img: "/banner/b6.jpg",
+    img: "https://i.ibb.co/R4hkvWdz/b5.jpg",
     title: "ফিলিস্তিনের ঈদ",
     des: "আমাদের তো ঈদ এসেছেখুশি ঘরে ঘরে।ফিলিস্তিন কেন গোরস্থান আজএই খুশির দিনে?বিশ্বের সকল মানবতা হলো কি",
-    link: "#",
+    date: "৬ জুন, ২০২৫",
+    readTime: "৩ মিনিটে পড়ুন",
+    writer: "মোহাম্মদ তৌহিদ",
   },
 ];
