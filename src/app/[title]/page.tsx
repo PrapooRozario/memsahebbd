@@ -3,14 +3,20 @@ import { bannerData } from "../data/BannerData";
 import Image from "next/image";
 import { CalendarRangeIcon, CloudAlert, TimerIcon } from "lucide-react";
 
-export default function Post({ params }: { params: { title: string } }) {
-  const decodeURL = decodeURIComponent(params.title);
+export default async function Post({
+  params,
+}: {
+  params: Promise<{ title: string }>;
+}) {
+  const decodeURL = decodeURIComponent((await params).title);
   const post = bannerData.find((p) => p.title === decodeURL);
 
   if (!post) {
     return (
       <div className="mt-10 text-center p-4">
-        <div className="mb-4 flex justify-center"><CloudAlert size={60} color="red"/></div>
+        <div className="mb-4 flex justify-center">
+          <CloudAlert size={60} color="red" />
+        </div>
         <p className="text-lg text-gray-800">
           দুঃখিত, আপনি যে পোস্টটি খুঁজছেন তা পাওয়া যায়নি। অনুগ্রহ করে আবার
           চেষ্টা করুন।
