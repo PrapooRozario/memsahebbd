@@ -1,36 +1,25 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Memshaheb
 
-## Getting Started
+**Memshaheb** is a community-driven website dedicated to showcasing various aspects of women's lives through emotions, literature, culture, and personal development. It serves as a platform where women can share their stories, poems, essays, and experiences.
 
-First, run the development server:
+## Project Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The main goal of Memshaheb is to provide a safe and inspiring space for women to express themselves creatively and connect with others. The platform aims to highlight the richness and diversity of women's perspectives and foster empowerment through shared narratives.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Community platform for sharing stories, poems, and articles
+- Focus on emotional, cultural, literary, and developmental themes
+- Responsive design with modern UI/UX components
+- Interactive content using React and Next.js
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Technology Stack
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Next.js** (v15.3.2) for server-side rendering and routing
+- **React** (v19.0.0) and **React DOM** for UI development
+- **Tailwind CSS** (v4) for styling
+- **TypeScript** (v5) for type safety
+- **Swiper** for sliders and carousels
+- **React Icons** and **Lucide React** for iconography
+- **React Use** for useful React hooks
+- **Motion** for animations
